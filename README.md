@@ -4,12 +4,29 @@
 <h1 align="center">
   <a href="https://telegram.me/JISSHU_BOTS">Jisshu Auto Filter Bot</a>
 </h1>
-<img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
 
-## **𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠**
+### 🤖 Bot Commands
 
-`/commands` Enter this command inside the bot and all the commands will be set automatically.
-<img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
+<details><summary> <code>/commands</code> Enter this command inside the bot and all the commands will be set automatically.</summary>
+  
+  ```
+start - Start The Bot  
+most - Get Most Searches Button List  
+trend - Get Top Trending Button List  
+mostlist - Show Most Searches List  
+trendlist - 𝖦𝖾𝗍 𝖳𝗈𝗉 𝖳𝗋𝖾𝗇𝖽𝗂𝗇𝗀 𝖡𝗎𝗍𝗍𝗈𝗇 𝖫𝗂𝗌𝗍  
+plan - Check Available Premium Membership Plans  
+myplan - Check Your Current Plan  
+refer - To Refer Your Friend And Get Premium  
+stats - Check My Database  
+id - Get Telegram Id  
+font - To Generate Cool Fonts  
+details - Check Group Details  
+settings - Change Bot Setting  
+grp_cmds - Check Group Commands  
+admin_cmds - Bot Admin Commands
+  ```
+</details>
 
 ## **Futures**
 <details><summary>Check Bot Futures</summary>
@@ -59,7 +76,10 @@
 - [x] Set ads 
 - [x] 𝐴𝑛𝑑 𝑀𝑜𝑟𝑒...
 </details>
-<img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
+
+## Futures Screenshot
+- Screenshot link - [Click Here](https://jisshuapis.vercel.app/screenshot.php)
+- Demo bot - [@NehaAutoBot](https://t.me/NehaAutoBot)
 
 ## Variables
 
@@ -133,22 +153,14 @@ python3 bot.py
 </pre>
 </p>
 </details>
+ 
+## **Special Thanks to**
 
-<img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
+- thanks to [Jisshu Developer](https://t.me/JISSHU_BOTS) (myself) for modifying the repo and adding powerful new features.  
+- Thanks to [Ꭺɴᴏɴʏᴍᴏᴜꜱ](https://t.me/@BeingXAnonymous) for contributing innovative features and consistently helping improve the project.  
+- Thanks to [𝐌ʀ 𝐈ɴғɪɴɪᴛʏ](https://t.me/infinitymp07) for identifying and fixing important issues, ensuring better performance and stability.
 
 
-## **Thanks to** 
- - <b>Thanks To [Zishan Khan](https://t.me/JISSHU_BOTS) To Modify And Add Amazing Feature In The Repo
- - Thanks To [biisal](https://github.com/biisal/biisal-filter-bot) For Base Repo
- - Thanks To [Ꭺɴᴏɴʏᴍᴏᴜꜱ](https://t.me/TG_Anonymous_Official) To refresh Future Code and Update premium future</b>
- - Thanks To [Zoro](https://t.me/JOYBOY_ZORO) Your ideas have been a huge help in improving this project. Thanks for your valuable input!
- - Thanks To [ɪᴛ'ꜱ ʟᴜғғʏ](https://t.me/CoderluffyTG) For fixing key errors and making the bot better. Your help has been truly appreciated!
- - Thanks To All Everyone In This Journey
- <img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
-
-<img src="https://github.com/Jisshubot/Jisshubot/blob/master/resources/hr.gif"/>
-<h1> <img src="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Logo/Jisshu.png" width="70px" style="border-radius: 50%"> ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ </h1>
+<h1> <img src="https://files.catbox.moe/eps9v4.jpg" width="70px" style="border-radius: 50%"> ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ </h1>
   
-[<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/telegram_icon.png" width="60px">](https://telegram.im/@JISSHU_BOTS) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/github_icon.png" width="60px">](https://github.com/Jisshubot) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/youtube_icon.png" width="60px">](https://www.youtube.com/@JISSHU-BOTS) [<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/insta_icon.png" width="60px">](https://instagram.com/Zishan_khan565)
-
-<img src="https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/resources/hr.gif"/>
+[<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/telegram_icon.png" width="60px">](https://telegram.im/@JISSHU_BOTS) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/github_icon.png" width="60px">](https://github.com/JisshuTG) [<img src="https://raw.githubusercontent.com/AnonymousX1025/AnonymousX1025/master/resources/youtube_icon.png" width="60px">](https://www.youtube.com/@JISSHU-BOTS) [<img src="https://github.com/AnonymousX1025/AnonymousX1025/blob/master/resources/insta_icon.png" width="60px">](https://www.instagram.com/jhaplustar?igsh=MW9neHowNWo1Ymt6NA==)
