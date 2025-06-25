@@ -10,6 +10,7 @@ import urllib.parse
 import logging
 import aiohttp
 
+
 async def render_page(id, secure_hash, src=None):
     file = await JisshuBot.get_messages(int(LOG_CHANNEL), int(id))
     file_data = await get_file_ids(JisshuBot, int(LOG_CHANNEL), int(id))
@@ -24,7 +25,7 @@ async def render_page(id, secure_hash, src=None):
     )
 
     tg_button = f"https://telegram.dog/{temp.U_NAME}"
-    
+
     tag = file_data.mime_type.split("/")[0].strip()
     file_size = humanbytes(file_data.file_size)
     if tag in ["video", "audio"]:
@@ -49,5 +50,5 @@ async def render_page(id, secure_hash, src=None):
         template_ne=jisshu_template.JISSHU_NAME,
         jisshu_disclaimer=jisshu_template.JISSHU_DISCLAIMER,
         jisshu_report_link=jisshu_template.JISSHU_REPORT_LINK,
-        jisshu_colours=jisshu_template.JISSHU_COLOURS
+        jisshu_colours=jisshu_template.JISSHU_COLOURS,
     )

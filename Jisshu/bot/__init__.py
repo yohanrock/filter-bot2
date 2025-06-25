@@ -1,12 +1,12 @@
 import logging
 import logging.config
-logging.config.fileConfig('logging.conf')
+
+logging.config.fileConfig("logging.conf")
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("imdbpy").setLevel(logging.ERROR)
 logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logging.getLogger("aiohttp").setLevel(logging.ERROR)
 logging.getLogger("aiohttp.web").setLevel(logging.ERROR)
@@ -19,7 +19,6 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from aiohttp import web
 
-from pyrogram import Client
 from info import *
 
 
@@ -35,6 +34,7 @@ class JisshuxBot(Client):
             plugins={"root": "plugins"},
             sleep_threshold=5,
         )
+
     async def iter_messages(
         self,
         chat_id: Union[int, str],
@@ -50,10 +50,10 @@ class JisshuxBot(Client):
                 Unique identifier (int) or username (str) of the target chat.
                 For your personal cloud (Saved Messages) you can simply use "me" or "self".
                 For a contact that exists in your Telegram address book you can use his phone number (str).
-                
+
             limit (``int``):
                 Identifier of the last message to be returned.
-                
+
             offset (``int``, *optional*):
                 Identifier of the first message to be returned.
                 Defaults to 0.
@@ -69,11 +69,14 @@ class JisshuxBot(Client):
             new_diff = min(200, limit - current)
             if new_diff <= 0:
                 return
-            messages = await self.get_messages(chat_id, list(range(current, current+new_diff+1)))
+            messages = await self.get_messages(
+                chat_id, list(range(current, current + new_diff + 1))
+            )
             for message in messages:
                 yield message
                 current += 1
-      
+
+
 JisshuBot = JisshuxBot()
 
 multi_clients = {}

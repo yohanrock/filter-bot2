@@ -3,7 +3,8 @@ from pyrogram import Client, filters
 from pyrogram.types import *
 
 # Replace this with your own channel ID
-CHANNEL_ID = -1001955427962  
+CHANNEL_ID = -1001955427962
+
 
 @Client.on_message(filters.channel & filters.media)
 async def add_button(client, message):
@@ -11,7 +12,7 @@ async def add_button(client, message):
         button = InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔰𝗠𝗼𝘃𝗶𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗚𝗿𝗼𝘂𝗽🔰", url="")]]
         )
-        
+
         try:
             # Try to add the button to the message
             await message.edit_reply_markup(reply_markup=button)

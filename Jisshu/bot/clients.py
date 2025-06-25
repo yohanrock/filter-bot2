@@ -13,7 +13,7 @@ async def initialize_clients():
     if not all_tokens:
         print("No additional clients found, using default client")
         return
-    
+
     async def start_client(client_id, token):
         try:
             print(f"Starting - Client {client_id}")
@@ -27,14 +27,16 @@ async def initialize_clients():
                 bot_token=token,
                 sleep_threshold=SLEEP_THRESHOLD,
                 no_updates=True,
-                in_memory=True
+                in_memory=True,
             ).start()
             work_loads[client_id] = 0
             return client_id, client
         except Exception:
             logging.error(f"Failed starting Client - {client_id} Error:", exc_info=True)
-    
-    clients = await asyncio.gather(*[start_client(i, token) for i, token in all_tokens.items()])
+
+    clients = await asyncio.gather(
+        *[start_client(i, token) for i, token in all_tokens.items()]
+    )
     multi_clients.update(dict(clients))
     if len(multi_clients) != 1:
         MULTI_CLIENT = True
