@@ -1450,11 +1450,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id,
             InputMediaPhoto(random.choice(PAYPICS)),
         )
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.FREE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
+
+    ## free RUSHI
 
     elif query.data == "other":
         buttons = [
@@ -1562,11 +1564,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")],
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.DISCLAIMER_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
+
+    # RUSHI disclaimer
+    
     elif query.data == "earn2":
         buttons = [
             [
