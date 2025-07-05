@@ -16,9 +16,9 @@ def is_enabled(value, default):
 
 # Main
 SESSION = environ.get("SESSION", "Media_search")
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("API_ID", "1220805"))
+API_HASH = environ.get("API_HASH", "b01d18cba6e1b7f206cc2d3d415ceed1")
+BOT_TOKEN = environ.get("BOT_TOKEN", "5580538946:AAFKWNQfyL--YKq7utxi8ea1qNQgwXMke_s")
 PORT = environ.get("PORT", "8082")
 
 # Owners
@@ -45,11 +45,11 @@ LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002823015135"))
 LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", "-1002823015135"))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://chinnimummy16:yohanrockstar@cluster0.2ey7c2p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
-FILES_DATABASE = environ.get("FILES_DATABASE", "")
+FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://chinnimummy16:yohanrockstar@cluster0.2ey7c2p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "INFINITY MOVIES")
 
 # Other Channel's
