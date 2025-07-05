@@ -16,9 +16,9 @@ def is_enabled(value, default):
 
 # Main
 SESSION = environ.get("SESSION", "Media_search")
-API_ID = int(environ.get("API_ID", "1220805"))
-API_HASH = environ.get("API_HASH", "b01d18cba6e1b7f206cc2d3d415ceed1")
-BOT_TOKEN = environ.get("BOT_TOKEN", "5580538946:AAFKWNQfyL--YKq7utxi8ea1qNQgwXMke_s")
+API_ID = int(environ.get("API_ID", ""))
+API_HASH = environ.get("API_HASH", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 PORT = environ.get("PORT", "8082")
 
 # Owners
@@ -27,7 +27,7 @@ ADMINS = [
     for admin in environ.get("ADMINS", "865764383").split()
 ]
 OWNER_USERNAME = environ.get(
-    "OWNER_USERNAME", "INFINITY MOVIES"
+    "OWNER_USERNAME", "INFINITY_MOVIES2"
 )  # without @ or https://t.me/
 USERNAME = environ.get("USERNAME", "INFINITY_MOVIES2")  # ADMIN USERNAME
 
