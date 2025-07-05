@@ -1451,7 +1451,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PAYPICS)),
         )
         await query.message.edit_text(
-            text=script.FREE_TXT.format(query.from_user.mention),
+            text=script.FREE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
