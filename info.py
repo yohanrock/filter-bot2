@@ -49,7 +49,7 @@ DATABASE_URI = environ.get("DATABASE_URI", "")
 DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
-FILES_DATABASE = environ.get("FILES_DATABASE", "Telegram_files")
+FILES_DATABASE = environ.get("FILES_DATABASE", "")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "INFINITY MOVIES")
 
 # Other Channel's
