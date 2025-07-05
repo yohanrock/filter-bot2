@@ -53,15 +53,15 @@ FILES_DATABASE = environ.get("FILES_DATABASE", "")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "INFINITY MOVIES")
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1001864434358"))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1001505228610"))
 DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
-request_channel = environ.get("REQUEST_CHANNEL", "-1001864434358")
+request_channel = environ.get("REQUEST_CHANNEL", "-1001505228610")
 REQUEST_CHANNEL = (
     int(request_channel)
     if request_channel and id_pattern.search(request_channel)
     else None
 )
-MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1001864434358"))
+MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1001789014639"))
 
 # Added Link Here Not Id
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "https://t.me/infinity_movies_updates")
