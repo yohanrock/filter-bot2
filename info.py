@@ -53,9 +53,9 @@ FILES_DATABASE = environ.get("FILES_DATABASE", "")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "INFINITY MOVIES")
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", ""))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002810224461"))
 DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
-request_channel = environ.get("REQUEST_CHANNEL", "")
+request_channel = environ.get("REQUEST_CHANNEL", "-1002810224461")
 REQUEST_CHANNEL = (
     int(request_channel)
     if request_channel and id_pattern.search(request_channel)
