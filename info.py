@@ -76,7 +76,7 @@ TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
 VERIFY_IMG = environ.get(
     "VERIFY_IMG", "https://files.catbox.moe/a46151.jpg"
 )
-SHORTENER_API = environ.get("SHORTENER_API", "10815cdac1c807a7b1c02b7cbb274e6a2bc1f75e)
+SHORTENER_API = environ.get("SHORTENER_API", "10815cdac1c807a7b1c02b7cbb274e6a2bc1f75e")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "gyanilinks.com")
 SHORTENER_API2 = environ.get(
     "SHORTENER_API2", "10815cdac1c807a7b1c02b7cbb274e6a2bc1f75e"
