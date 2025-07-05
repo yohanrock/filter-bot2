@@ -1446,14 +1446,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
-
         await client.edit_message_media(
-            query.message.chat.id, query.message.id, InputMediaPhoto(SUBSCRIPTION)
-        )
-        await query.message.edit_text(
-            text=script.FREE_TXT,
+            query.message.chat.id,
+            query.message.id,
+            media=InputMediaPhoto(
+                media=SUBSCRIPTION,
+                caption=script.FREE_TXT,
+                parse_mode=enums.ParseMode.HTML,
+            ),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
         )
         
         # await client.edit_message_media(
@@ -1582,12 +1583,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # )
 
         await client.edit_message_media(
-            query.message.chat.id, query.message.id, InputMediaPhoto(SUBSCRIPTION)
-        )
-        await query.message.edit_text(
-            text=script.DISCLAIMER_TXT,
+            query.message.chat.id,
+            query.message.id,
+            media=InputMediaPhoto(
+                media=SUBSCRIPTION,
+                caption=script.DISCLAIMER_TXT,
+                parse_mode=enums.ParseMode.HTML,
+            ),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
         )
 
     # RUSHI disclaimer
