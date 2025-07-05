@@ -1446,16 +1446,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id,
-            query.message.id,
-            InputMediaPhoto(random.choice(PAYPICS)),
-        )
-        await query.message.edit_text(
-            text=script.FREE_TXT,
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                media=random.choice(PAYPICS),
+                caption=script.FREE_TXT,
+                parse_mode=enums.ParseMode.HTML,
+            ),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
         )
+        # await client.edit_message_media(
+        #     query.message.chat.id,
+        #     query.message.id,
+        #     InputMediaPhoto(random.choice(PAYPICS)),
+        # )
+        # await query.message.edit_text(
+        #     text=script.FREE_TXT,
+        #     reply_markup=reply_markup,
+        #     parse_mode=enums.ParseMode.HTML,
+        # )
 
     ## free RUSHI
 
@@ -1565,10 +1573,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")],
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
-            text=(script.DISCLAIMER_TXT),
+        # await query.message.edit_text(
+        #     text=(script.DISCLAIMER_TXT),
+        #     reply_markup=reply_markup,
+        #     parse_mode=enums.ParseMode.HTML,
+        # )
+
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                media=random.choice(PAYPICS),
+                caption=(script.DISCLAIMER_TXT),
+                parse_mode=enums.ParseMode.HTML,
+            ),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
         )
 
     # RUSHI disclaimer
