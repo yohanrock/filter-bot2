@@ -1509,7 +1509,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         await query.message.edit_text(
             script.ABOUT_TEXT.format(query.from_user.mention(), temp.B_LINK),
-            reply_markup=InlineKeyboardMarkup(
+            reply_markup=InlineKeyboardMarkup(buttons) 
                 [
                     [
                         InlineKeyboardButton(
@@ -1563,7 +1563,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.edit_text(
-            text=script.DISCLAIMER_TXT,
+            text=(script.DISCLAIMER_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML,
         )
