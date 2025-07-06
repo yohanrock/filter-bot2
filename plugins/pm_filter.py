@@ -1575,7 +1575,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     url=f"http://telegram.dog/{temp.U_NAME}?startgroup=start",
                 )
             ],
-            [InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="earn")],
+            [InlineKeyboardButton("⋞ ʙᴀᴄᴋ", callback_data="help")],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
