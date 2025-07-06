@@ -27,9 +27,9 @@ ADMINS = [
     for admin in environ.get("ADMINS", "865764383").split()
 ]
 OWNER_USERNAME = environ.get(
-    "OWNER_USERNAME", "INFINITY_MOVIES2"
+    "OWNER_USERNAME", "keepmessage_bot"
 )  # without @ or https://t.me/
-USERNAME = environ.get("USERNAME", "INFINITY_MOVIES2")  # ADMIN USERNAME
+USERNAME = environ.get("USERNAME", "keepmessage_bot")  # ADMIN USERNAME
 
 # Database Channel
 CHANNELS = [
@@ -157,7 +157,7 @@ DELETE_TIME = int(environ.get("DELETE_TIME", 1200))
 IMDB = is_enabled("IMDB", True)
 FILE_CAPTION = environ.get("FILE_CAPTION", f"{script.FILE_CAPTION}")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
-LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
+LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", True)
 PROTECT_CONTENT = is_enabled("PROTECT_CONTENT", False)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 LINK_MODE = is_enabled("LINK_MODE", False)
@@ -173,7 +173,7 @@ if "DYNO" in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "https://filter-bot2-3k2s.onrender.com")
+URL = environ.get("FQDN", "filter-bot2-3k2s.onrender.com")
 
 # Commands
 admin_cmds = [
